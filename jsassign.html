@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Range and Lead Count Selection</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <h1>Date Range and Lead Count Selection</h1>
+      <form id="date-lead-form" class="form-container">
+        <div class="form-group">
+          <label for="start-date">Start Date:</label>
+          <input type="date" id="start-date" />
+        </div>
+        <div class="form-group">
+          <label for="end-date">End Date:</label>
+          <input type="date" id="end-date" />
+        </div>
+        <div class="form-group">
+          <p>Month: <span id="selected-month"></span></p>
+          <p>Year: <span id="selected-year"></span></p>
+        </div>
+
+        <div class="form-group">
+          <label for="exclude-date">Exclude Dates:</label>
+          <input type="date" id="exclude-date" />
+          <button id="add-excluded-date">Exclude</button>
+        </div>
+        <div class="form-group">
+          <p>Excluded Dates:</p>
+          <ul id="excluded-dates"></ul>
+        </div>
+
+        <div class="form-group">
+          <p>Number of Days: <span id="num-days">0</span></p>
+        </div>
+
+        <div class="form-group">
+          <label for="lead-count">Number of Leads:</label>
+          <input type="number" id="lead-count" />
+        </div>
+        <div class="form-group">
+          <p>Expected Lead Count: <span id="expected-lead-count">0</span></p>
+        </div>
+
+        <div class="form-group">
+          <button type="button" id="save-button">Save</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
